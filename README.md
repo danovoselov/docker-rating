@@ -1,24 +1,26 @@
-# docker-rating (coming soon...)
+# docker-rating
 
 ## Project setup
 ```
-git clone 
+git clone https://github.com/dimaaxxy/docker-rating.git
 ```
-
-### Compiles and hot-reloads for development
+```angular2html
+cd docker-rating/
+```
+```
+docker-compose up -d
+```
+```
+cd frontend/
+```
+```
+npm install
+```
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+After going to [localhost](http://localhost:8081/)
 
-### Lints and fixes files
-```
-npm run lint
-```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Follow me on GitHub [dimaaxxy](https://github.com/dimaaxxy)
