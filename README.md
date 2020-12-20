@@ -4,8 +4,12 @@
 ```
 git clone https://github.com/dimaaxxy/docker-rating.git
 ```
-```angular2html
+```
 cd docker-rating/
+```
+```text
+Скопируй файл sample.env в .env (его нужно создать)
+И измени логин и пароль к базе данных
 ```
 ```
 docker-compose up -d
