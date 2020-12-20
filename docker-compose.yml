@@ -1,0 +1,23 @@
+version: '3'
+services:
+  db:
+    container_name: db
+    hostname: db
+    image: mariadb
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456
+    volumes:
+      - ./database:/var/lib/mysql
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+  frontend:
+    build: frontend/
+    network_mode: host
+    ports:
+      - 8081:8081
+    volumes:
+      - ./:/frontend/
